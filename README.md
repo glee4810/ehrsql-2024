@@ -1,6 +1,6 @@
 # Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP 2024
 
-<p align="center" float="center">
+<p align="left" float="left">
   <img src="https://raw.githubusercontent.com/glee4810/ehrsql-2024/master/image/logo.png?token=GHSAT0AAAAAACGJLDZ2UA4XDCPFBJWVTM52ZMTQWZQ" height="100" />
 </p>
 
@@ -23,7 +23,7 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 ## <a name="data_format"></a>Data Format
 
 ### Statistics
-|  #Train |   #Dev  |   #Test  |
+| #Train | #Dev | #Test |
 |--------:|--------:|--------:|
 | 9680 (TBD) | 1260 (TBD) | 1698 (TBD) |
 
