@@ -24,7 +24,7 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 
 ### Statistics
 | #Train | #Dev | #Test |
-|--------:|--------:|--------:|
+|:-------:|:-------:|:-------:|
 | 9680 (TBD) | 1260 (TBD) | 1698 (TBD) |
 
 
