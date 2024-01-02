@@ -50,15 +50,27 @@ A list of python dictionary in the JSON format:
 ```
 
 
-### Prediction File Format and Format Checkers
+## Baseline
+
+### Option 1: Local-Model Sample Submission
+
+
+
+### Option 2: OpenAI Model Sample Submission
+
+
+
+
+
+## Submission
+
+### File Format and Format Checkers
 
 A prediction file must be one single JSON file for all texts. The entry for each text must include the fields "id" and "label", same as \*_label.json.
 The format checkers verify that your prediction file complies with the expected format. They are located in the ```format_checker``` module.
-
 ```python
 python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results_files> 
 ```
-
 
 
 ## Organizers

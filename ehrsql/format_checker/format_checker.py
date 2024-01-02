@@ -12,7 +12,7 @@ It should be a list of lines of objects:
 [
     {
         id    -> identifier of the sample,
-        label -> label (sql prediction or null if abstention),
+        label -> label (sql prediction or 'null'),
     },
     ...
 ]
@@ -28,15 +28,22 @@ def check_format(file_path):
     return False
   
   try:
-    submission = pd.read_json(file_path, lines=True)[['id', 'label']]
+    with open(file_path) as f:
+      submission_raw = json.load(f)
+    prediction = []
+    for line in submission_raw:
+      for column in COLUMNS:
+        if column not in line:
+          return False
+          break
+        prediction.append(line['label'])
   except:
     logging.error("File is not a valid json file: {}".format(file_path))
     return False
   
-  for column in COLUMNS:
-    if submission[column].isna().any():
-      logging.error("NA value in file {} in column {}".format(file_path, column))
-      return False
+  if prediction.count('null')>len(prediction)//2:
+    logging.error("The 'null' is more than 50\% of the predictions")
+    return False
   
   return True
 
