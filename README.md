@@ -1,8 +1,9 @@
 # Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP 2024
 
 <p align="left" float="left">
-  <img src="images/logo.png" height="40" />
+  <img src="https://raw.githubusercontent.com/glee4810/ehrsql-2024/master/image/logo.png?token=GHSAT0AAAAAACGJLDZ2UA4XDCPFBJWVTM52ZMTQWZQ" height="100" />
 </p>
+
 
 [Competition](#competition) | [Data Source](#data_source) | [Data Format](#data_format) | [Evaluation Metrics](#scorer_and_official_evaluation_metrics) | [Baselines](#baselines) | [FAQ](#faq) | [Organizers](#organizers) | [Contacts](#contacts)
 
@@ -34,8 +35,8 @@ For the task, we have two types of files for each of the train, dev, and test se
 A list of python dictionary in the JSON format:
 ```
 {
-  id -> identifier of the example,
-  question -> identifier of the example
+  id -> Identifier of the example,
+  question -> Input question (This can be either answerable or unanswerable given the MIMIC-IV schema)
 }
 ```
 
@@ -43,16 +44,15 @@ A list of python dictionary in the JSON format:
 A list of python dictionary in the JSON format:
 ```
 {
-  id -> identifier of the example,
-  label -> label (SQL query or 'null')
+  id -> Identifier of the example,
+  label -> Label (SQL query or 'null')
 }
 ```
 
 
 ### Prediction File Format and Format Checkers
 
-A prediction file must be one single JSON file for all texts. The entry for each text must include the fields "id" and "label".  
-
+A prediction file must be one single JSON file for all texts. The entry for each text must include the fields "id" and "label", same as \*_label.json.
 The format checkers verify that your prediction file complies with the expected format. They are located in the ```format_checker``` module.
 
 ```python
