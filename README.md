@@ -1,7 +1,7 @@
 # Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP 2024
 
 <p align="left" float="left">
-  <img src="https://raw.githubusercontent.com/glee4810/ehrsql-2024/master/image/logo.png?token=GHSAT0AAAAAACGJLDZ2UA4XDCPFBJWVTM52ZMTQWZQ" height="100" />
+  <img src="image/logo.png" height="100" />
 </p>
 
 
