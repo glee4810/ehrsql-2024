@@ -59,7 +59,7 @@ A list of python dictionary in the JSON format:
 
 ## <a name="scorer_and_official_evaluation_metrics"></a>Evaluation Metrics
 
-The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation metric.
+The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation metric. More details are in the [Task Desciption](https://www.codabench.org/competitions/1889) tab.
 
 
 
@@ -80,7 +80,7 @@ TBD
 
 ## Submission
 
-### File Format and Format Checkers
+### File Format and Format Checker
 
 A prediction file must be one single JSON file for all texts. The entry for each text must include the fields "id" and "label", same as \*_label.json.
 The format checkers verify that your prediction file complies with the expected format. They are located in the ```format_checker``` module.
@@ -91,7 +91,7 @@ python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results
 
 ### Submitting the File
 
-Submit your file on our task website on CodaBench: https://www.codabench.org/competitions/1889.
+Submit your prediction file on our task website on CodaBench: https://www.codabench.org/competitions/1889. For more details, see the Submission tab.
 
 
 
