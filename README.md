@@ -5,7 +5,7 @@
 </p>
 
 
-[Competition](#competition) | [Data Format](#data_format) | [Evaluation Metrics](#scorer_and_official_evaluation_metrics) | [Baselines](#baselines) | [Organizers](#organizers) | [Contacts](#contacts)
+[Competition](#competition) | [Data Format](#data_format) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
 
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries typically requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
@@ -14,7 +14,7 @@ The goal of the task is to develop a 'reliable text-to-SQL system on EHRs.' Unli
 
 
 
-## Competition
+## <a name="competition"></a>Competition
 
 Our competition is launched on the CodaBench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
 
@@ -57,14 +57,14 @@ A list of python dictionary in the JSON format:
 
 
 
-## <a name="scorer_and_official_evaluation_metrics"></a>Evaluation Metrics
+## <a name="scorer_and_official_evaluation_metric"></a>Evaluation Metric
 
 The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation metric. More details are in the [Task Desciption](https://www.codabench.org/competitions/1889) tab.
 
 
 
 
-## Baseline
+## <a name="baselines"></a>Baseline
 
 ### Option 1: Local-Model Sample Submission
 
@@ -78,7 +78,7 @@ TBD
 
 
 
-## Submission
+## <a name="submission"></a>Submission
 
 ### File Format and Format Checker
 
@@ -91,12 +91,12 @@ python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results
 
 ### Submitting the File
 
-Submit your prediction file on our task website on CodaBench: https://www.codabench.org/competitions/1889. For more details, see the Submission tab.
+Submit your prediction file on our task website on CodaBench. For more details, see the [Submission](https://www.codabench.org/competitions/1889) tab.
 
 
 
 
-## Organizers
+## <a name="organizers"></a>Organizers
 
 Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist.ac.kr/).
 
@@ -105,7 +105,8 @@ Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist
 - Sunjun Kweon
 - Seongsu Bae
 
-## Contacts
+
+## <a name="contacts"></a>Contacts
 
 Google group: [https://groups.google.com/g/ehrsql/](https://https://groups.google.com/g/ehrsql-2024/)  
 Email: ehrsql-2024@googlegroups.com
