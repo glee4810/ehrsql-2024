@@ -5,7 +5,7 @@
 </p>
 
 
-[Competition](#competition) | [Data Source](#data_source) | [Data Format](#data_format) | [Evaluation Metrics](#scorer_and_official_evaluation_metrics) | [Baselines](#baselines) | [FAQ](#faq) | [Organizers](#organizers) | [Contacts](#contacts)
+[Competition](#competition) | [Data Format](#data_format) | [Evaluation Metrics](#scorer_and_official_evaluation_metrics) | [Baselines](#baselines) | [FAQ](#faq) | [Organizers](#organizers) | [Contacts](#contacts)
 
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries typically requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
@@ -50,14 +50,24 @@ A list of python dictionary in the JSON format:
 ```
 
 
+
+## <a name="scorer_and_official_evaluation_metrics"></a>Evaluation Metrics
+
+The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation metric.
+
+
+
+
 ## Baseline
 
 ### Option 1: Local-Model Sample Submission
 
+TBD
 
 
 ### Option 2: OpenAI Model Sample Submission
 
+TBD
 
 
 
@@ -71,6 +81,13 @@ The format checkers verify that your prediction file complies with the expected 
 ```python
 python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results_files> 
 ```
+
+
+### Submitting the File
+
+Submit your file on CodaBench: https://www.codabench.org/competitions/1752.
+
+
 
 
 ## Organizers
