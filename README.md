@@ -16,7 +16,7 @@ The goal of the task is to develop a 'reliable text-to-SQL system on EHRs.' Unli
 
 ## Competition
 
-Our competition is launched on the CodaBench platform: [https://www.codabench.org/competitions/XXX](https://www.codabench.org/competitions/XXX).
+Our competition is launched on the CodaBench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
 
 
 
@@ -26,6 +26,12 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 | #Train | #Dev | #Test |
 |:-------:|:-------:|:-------:|
 | 9680 (TBD) | 1260 (TBD) | 1698 (TBD) |
+
+
+### Data Relase
+
+- The training and dev data will be released on Jan 29, 2024.
+- The test data will be released on Feb 26, 2024.
 
 
 ### Data Format
@@ -85,7 +91,7 @@ python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results
 
 ### Submitting the File
 
-Submit your file on CodaBench: https://www.codabench.org/competitions/1752.
+Submit your file on our task website on CodaBench: https://www.codabench.org/competitions/1889.
 
 
 
