@@ -88,6 +88,10 @@ The format checkers verify that your prediction file complies with the expected 
 python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results_files> 
 ```
 
+After checking the format, compress (zip) the prediction file, for example with a bash command:
+```
+zip predictions.zip prediction.json
+```
 
 ### Submitting the File
 

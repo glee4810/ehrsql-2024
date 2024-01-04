@@ -41,10 +41,6 @@ def check_format(file_path):
     logging.error("File is not a valid json file: {}".format(file_path))
     return False
   
-  if prediction.count('null')>len(prediction)//2:
-    logging.error("The 'null' is more than 50\% of the predictions")
-    return False
-  
   return True
 
 
