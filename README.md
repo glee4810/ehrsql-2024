@@ -23,7 +23,7 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 
 * Registration opens: Jan 29 (Mon), 2024
 * Training & dev data release: Jan 29 (Mon), 2024
-* Test data release (with no label): Feb 26 (Mon), 2024
+* Test data release: Feb 26 (Mon), 2024
 * Test submission deadline: Mar 1 (Fri), 2024
 * Code submission and fact sheet deadline: Mar 4 (Mon), 2024
 * Final result release (ones that are code-verified): Mar 11 (Mon), 2024
