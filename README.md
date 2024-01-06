@@ -24,7 +24,7 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 * Registration opens: Jan 29, 2024
 * Training and validation data release: Jan 29, 2024
 * Test data release: Feb 26, 2024
-* Run submission deadline: Mar 1 (Fri), 2024
+* Run submission deadline: Mar 1, 2024
 * Code submission and fact sheet deadline: Mar 4, 2024
 * Final result release: Mar 11, 2024
 * Paper Deadline: Mar 21, 2024
