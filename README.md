@@ -5,7 +5,7 @@
 </p>
 
 
-[Competition](#competition) | [Data Format](#data_format) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
+[Competition](#competition) | [Timeline](#timeline) | [Data Format](#data_format) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
 
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
@@ -18,6 +18,19 @@ The goal of the task is to develop a reliable text-to-SQL system on EHRs. Unlike
 
 Our competition is launched on the CodaBench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
 
+
+## <a name="timeline"></a>Timeline
+
+* Registration opens: Jan 29 (Mon), 2024
+* Training & dev data release: Jan 29 (Mon), 2024
+* Test data release (with no label): Feb 26 (Mon), 2024
+* Test submission deadline: Mar 1 (Fri), 2024
+* Code submission and fact sheet deadline: Mar 4 (Mon), 2024
+* Final result release (ones that are code-verified): Mar 11 (Mon), 2024
+* Paper Deadline: Mar 21 (Wed), 2024
+* Notification of acceptance: Apr 19 (Fri), 2023
+* Camera-ready system papers due: May 2 (Thu), 2024
+* Clinical NLP Workshop Date: June 20 (Thu) or 21 (Fri), 2024
 
 
 ## <a name="data_format"></a>Data Format
