@@ -21,16 +21,15 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 
 ## <a name="timeline"></a>Timeline
 
-* Registration opens: Jan 29 (Mon), 2024
-* Training & dev data release: Jan 29 (Mon), 2024
-* Test data release: Feb 26 (Mon), 2024
-* Test submission deadline: Mar 1 (Fri), 2024
-* Code submission and fact sheet deadline: Mar 4 (Mon), 2024
-* Final result release (ones that are code-verified): Mar 11 (Mon), 2024
-* Paper Deadline: Mar 21 (Wed), 2024
-* Notification of acceptance: Apr 19 (Fri), 2023
-* Camera-ready system papers due: May 2 (Thu), 2024
-* Clinical NLP Workshop Date: June 20 (Thu) or 21 (Fri), 2024
+* Registration opens: Jan 29, 2024
+* Training and validation data release: Jan 29, 2024
+* Test data release: Feb 26, 2024
+* Run submission deadline: Mar 1 (Fri), 2024
+* Code submission and fact sheet deadline: Mar 4, 2024
+* Final result release: Mar 11, 2024
+* Paper Deadline: Mar 21, 2024
+* Notification of acceptance: Apr 19, 2023
+* Clinical NLP Workshop: June 20 or 21, 2024
 
 
 ## <a name="data_format"></a>Data Format
