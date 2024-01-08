@@ -21,15 +21,16 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 
 ## <a name="timeline"></a>Timeline
 
-* Registration opens: Jan 29, 2024
-* Training and validation data release: Jan 29, 2024
-* Test data release: Feb 26, 2024
-* Run submission deadline: Mar 1, 2024
-* Code submission and fact sheet deadline: Mar 4, 2024
-* Final result release: Mar 11, 2024
-* Paper Deadline: Mar 21, 2024
-* Notification of acceptance: Apr 19, 2023
-* Clinical NLP Workshop: June 20 or 21, 2024
+* Registration opens: Monday January 29, 2024
+* Training and validation data release: Monday January 29, 2024
+* Test data release: Monday February 26, 2024
+* Run submission due: Friday March 1, 2024
+* Code submission and fact sheet deadline: Monday March 4, 2024
+* Final result release: Monday March 11, 2024
+* Paper submission due: Tuesday March 19, 2024
+* Notification of acceptance: Tuesday April 16, 2024
+* Final versions of papers due: Wednesday April 24, 2024
+* Clinical NLP Workshop @ NAACL 2024: June 21 or 22, 2024, Mexico City, Mexico
 
 
 ## <a name="dataset"></a>Dataset
@@ -86,7 +87,6 @@ TBD
 ### Option 2: OpenAI Model Sample Submission
 
 TBD
-
 
 
 
