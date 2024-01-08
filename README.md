@@ -1,4 +1,4 @@
-# Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP 2024
+# Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP Workshop @ NAACL 2024
 
 <p align="left" float="left">
   <img src="image/logo.png" height="100" />
@@ -16,7 +16,7 @@ The goal of the task is to develop a reliable text-to-SQL system on EHRs. Unlike
 
 ## <a name="competition"></a>Competition
 
-Our competition is launched on the CodaBench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
+Our competition is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
 
 
 ## <a name="timeline"></a>Timeline
@@ -101,7 +101,7 @@ zip predictions.zip prediction.json
 
 ### Submitting the File
 
-Submit your prediction file on our task website on CodaBench. For more details, see the [Submission](https://www.codabench.org/competitions/1889) tab.
+Submit your prediction file on our task website on Codabench. For more details, see the [Submission](https://www.codabench.org/competitions/1889) tab.
 
 
 
