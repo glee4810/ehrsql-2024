@@ -43,8 +43,8 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 
 ### Data Relase
 
-- The training and dev data will be released on Jan 29, 2024.
-- The test data will be released on Feb 26, 2024.
+- The training and dev data will be released on January 29, 2024.
+- The test data will be released on February 26, 2024.
 
 
 ### Data Format
