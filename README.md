@@ -5,7 +5,7 @@
 </p>
 
 
-[Competition](#competition) | [Timeline](#timeline) | [Data Format](#data_format) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
+[Competition](#competition) | [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
 
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
@@ -32,12 +32,12 @@ Our competition is launched on the CodaBench platform: [https://www.codabench.or
 * Clinical NLP Workshop: June 20 or 21, 2024
 
 
-## <a name="data_format"></a>Data Format
+## <a name="dataset"></a>Dataset
 
-### Statistics
+<!-- ### Statistics
 | #Train | #Dev | #Test |
 |:-------:|:-------:|:-------:|
-| 9680 (TBD) | 1260 (TBD) | 1698 (TBD) |
+| 9680 (TBD) | 1260 (TBD) | 1698 (TBD) | -->
 
 
 ### Data Relase
@@ -92,15 +92,9 @@ TBD
 
 ## <a name="submission"></a>Submission
 
-### File Format and Format Checker
+### File Format
 
-A prediction file must be one single JSON file for all texts. The entry for each text must include the fields "id" and "label", same as \*_label.json.
-The format checkers verify that your prediction file complies with the expected format. They are located in the ```format_checker``` module.
-```python
-python3 format_checker/format_checker.py --pred_files_path=<path_to_your_results_files> 
-```
-
-After checking the format, compress (zip) the prediction file, for example with a bash command:
+After saving your prediction file, compress (zip) it using a bash command, for example:
 ```
 zip predictions.zip prediction.json
 ```
