@@ -1,4 +1,4 @@
-# Reliable Text-to-SQL on Electronic Health Records @ NAACL - Clinical NLP Workshop @ NAACL 2024
+# Reliable Text-to-SQL on Electronic Health Records - Clinical NLP Workshop @ NAACL 2024
 
 <p align="left" float="left">
   <img src="image/logo.png" height="100" />
