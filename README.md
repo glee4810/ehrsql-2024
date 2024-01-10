@@ -36,20 +36,20 @@ Our competition is launched on the Codabench platform: [https://www.codabench.or
 ## <a name="dataset"></a>Dataset
 
 <!-- ### Statistics
-| #Train | #Dev | #Test |
+| #Train | #Valid | #Test |
 |:-------:|:-------:|:-------:|
 | 9680 (TBD) | 1260 (TBD) | 1698 (TBD) | -->
 
 
 ### Data Relase
 
-- The training and dev data will be released on January 29, 2024.
+- The training and validation data will be released on January 29, 2024.
 - The test data will be released on February 26, 2024.
 
 
 ### Data Format
 
-For the task, we have two types of files for each of the train, dev, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files.
+For the task, we have two types of files for each of the training, validation, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files.
 #### Input Data (\*_data.json)
 A list of python dictionary in the JSON format:
 ```
@@ -79,12 +79,12 @@ The scorer for the task is located in the scorer module. The scorer (scoring.py)
 
 ## <a name="baselines"></a>Baseline
 
-### Option 1: Local-Model Sample Submission
+### Option 1: Local-Model Sample Submission (T5)
 
 TBD
 
 
-### Option 2: OpenAI Model Sample Submission
+### Option 2: OpenAI Model Sample Submission (ChatGPT)
 
 TBD
 
