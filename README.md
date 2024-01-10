@@ -79,10 +79,13 @@ The scorer for the task is located in the scorer module. The scorer (scoring.py)
 
 ## <a name="baselines"></a>Baseline
 
-### Option 1: Local-Model Sample Submission (T5)
+### "Dummy" Sample Submission
 
 TBD
 
+### Option 1: Local-Model Sample Submission (T5)
+
+TBD
 
 ### Option 2: OpenAI Model Sample Submission (ChatGPT)
 
