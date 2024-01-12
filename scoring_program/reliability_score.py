@@ -12,7 +12,8 @@ def process_answer(ans):
 
 def execute(sql, db_path, skip_indicator='null'):
     if sql != skip_indicator:
-        con = sqlite3.connect(db_path)
+        current_real_dir = os.path.dirname(os.path.realpath(__file__))
+        con = sqlite3.connect(os.path.join(current_real_dir, db_path))
         con.text_factory = lambda b: b.decode(errors="ignore")
         cur = con.cursor()
         result = cur.execute(sql).fetchall()
@@ -47,11 +48,10 @@ def execute_query_distributed(pairs, db_path, num_workers):
 
     return exec_result
 
-def calculate_score(real_dict, pred_dict, db_path='mimiciii.sqlite'):
+def calculate_score(real_dict, pred_dict, return_scores=False, db_path='mimiciii.sqlite'):
 
     assert set(real_dict) == set(pred_dict), "IDs do not match"
 
-    con = sqlite3.connect(db_path)
     num_workers = mp.cpu_count()
 
     pairs = []
@@ -63,6 +63,7 @@ def calculate_score(real_dict, pred_dict, db_path='mimiciii.sqlite'):
     exec_result = execute_query_distributed(pairs, db_path, num_workers)
 
     reliablity_score = []
+    reliablity_score_dict = {}
     for result in exec_result:
         key = result['id']
         ans_real = result['real']
@@ -88,9 +89,13 @@ def calculate_score(real_dict, pred_dict, db_path='mimiciii.sqlite'):
         else:
             import pdb; pdb.set_trace()
         reliablity_score.append(score)
+        reliablity_score_dict[key] = score
 
     accuracy0 = np.mean([s*0 if s == -1 else s for s in reliablity_score])*100
     accuracy10 = np.mean([s*10 if s == -1 else s for s in reliablity_score])*100
     accuracyN = np.mean([s*len(reliablity_score) if s == -1 else s for s in reliablity_score])*100
 
-    return accuracy0, accuracy10, accuracyN
+    if return_scores:
+        return accuracy0, accuracy10, accuracyN, reliablity_score_dict
+    else:
+        return accuracy0, accuracy10, accuracyN

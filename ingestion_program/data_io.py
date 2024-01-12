@@ -1,3 +1,4 @@
+import os
 import json
 
 def read_json(path):
@@ -6,5 +7,6 @@ def read_json(path):
     return file
 
 def write_json(path, file):
+    os.makedirs(os.path.split(path)[0], exist_ok=True)
     with open(path, 'w+') as f:
         json.dump(file, f)
