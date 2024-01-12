@@ -16,7 +16,8 @@ The goal of the task is to develop a reliable text-to-SQL system on EHRs. Unlike
 
 ## <a name="competition"></a>Competition
 
-Our competition is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
+This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024). Our competition is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
+
 
 
 ## <a name="timeline"></a>Timeline
