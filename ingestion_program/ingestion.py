@@ -1,8 +1,7 @@
-import json
 import os
 import sys
+import json
 import numpy as np
-from data_io import read_json, write_json
 
 input_dir = os.path.abspath(sys.argv[1])
 output_dir = os.path.abspath(sys.argv[2])
@@ -18,10 +17,18 @@ def find_json_file(path):
     return json_file[0]
 
 def main():
+
     print('Reading Prediction')
     submission_file_path = find_json_file(submission_dir)
-    prediction = read_json(os.path.join(submission_dir, submission_file_path))
-    write_json(prediction, os.path.join(output_dir, 'prediction.json'))
+
+    read_path = os.path.join(submission_dir, submission_file_path)
+    with open(read_path) as f:
+        prediction = json.load(f)
+
+    write_path = os.path.join(output_dir, 'prediction.json')
+    os.makedirs(os.path.dirname(write_path), exist_ok=True)
+    with open(write_path, 'w+') as f:
+        json.dump(prediction, f)
 
 if __name__ == '__main__':
     main()
