@@ -12,8 +12,7 @@ def process_answer(ans):
 
 def execute(sql, db_path, skip_indicator='null'):
     if sql != skip_indicator:
-        current_real_dir = os.path.dirname(os.path.realpath(__file__))
-        con = sqlite3.connect(os.path.join(current_real_dir, db_path))
+        con = sqlite3.connect(db_path)
         con.text_factory = lambda b: b.decode(errors="ignore")
         cur = con.cursor()
         result = cur.execute(sql).fetchall()
@@ -34,7 +33,7 @@ def execute_query(key, sql1, sql2, db_path):
     result = {'id': key, 'real': result1, 'pred': result2}
     return result
 
-def execute_query_distributed(pairs, db_path, num_workers):
+def execute_query_distributed(pairs, db_path, num_workers=1):
     
     exec_result = []
     def result_tracker(result):
@@ -51,6 +50,11 @@ def execute_query_distributed(pairs, db_path, num_workers):
 def calculate_score(real_dict, pred_dict, return_scores=False, db_path='mimiciii.sqlite'):
 
     assert set(real_dict) == set(pred_dict), "IDs do not match"
+
+    current_real_dir = os.path.dirname(os.path.realpath(__file__))
+    db_path = os.path.join(current_real_dir, db_path)
+    if not os.path.exists(db_path):
+        raise Exception('File does not exist: %s' % db_path)
 
     num_workers = mp.cpu_count()
 

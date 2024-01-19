@@ -5,7 +5,7 @@
 </p>
 
 
-[Competition](#competition) | [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Organizers](#organizers) | [Contacts](#contacts)
+[Competition](#competition) | [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Communication and Contact](#communication_and_contacts) | [Organizers](#organizers)
 
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
@@ -109,6 +109,11 @@ Submit your prediction file on our task website on Codabench. For more details, 
 
 
 
+## <a name="contacts"></a>Contacts
+
+For general communications: Please, use our Google group at [https://groups.google.com/g/ehrsql/](https://https://groups.google.com/g/ehrsql-2024/). Important announcements and discussions are posted and discussed in our Google group.
+
+
 
 ## <a name="organizers"></a>Organizers
 
@@ -118,9 +123,3 @@ Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist
 - Gyubok Lee
 - Sunjun Kweon
 - Seongsu Bae
-
-
-## <a name="contacts"></a>Contacts
-
-Google group: [https://groups.google.com/g/ehrsql/](https://https://groups.google.com/g/ehrsql-2024/)  
-Email: ehrsql-2024@googlegroups.com
