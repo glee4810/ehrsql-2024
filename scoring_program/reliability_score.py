@@ -47,7 +47,7 @@ def execute_query_distributed(pairs, db_path, num_workers=1):
 
     return exec_result
 
-def calculate_score(real_dict, pred_dict, db_path=None, return_as_dict=False):
+def calculate_score(real_dict, pred_dict, db_path=None, return_dict=False):
 
     assert set(real_dict) == set(pred_dict), "IDs do not match"
 
@@ -98,8 +98,8 @@ def calculate_score(real_dict, pred_dict, db_path=None, return_as_dict=False):
         reliablity_score.append(score)
         reliablity_score_dict[key] = score
 
-    if return_as_dict:
-        return reliablity_score_dict
+    if return_dict:
+        return reliablity_score, reliablity_score_dict
     else:
         return reliablity_score
 
