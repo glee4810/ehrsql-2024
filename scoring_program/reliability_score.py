@@ -47,12 +47,15 @@ def execute_query_distributed(pairs, db_path, num_workers=1):
 
     return exec_result
 
-def calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite'):
+def calculate_score(real_dict, pred_dict, db_path=None):
 
     assert set(real_dict) == set(pred_dict), "IDs do not match"
 
-    current_real_dir = os.path.dirname(os.path.realpath(__file__))
-    db_path = os.path.join(current_real_dir, db_path)
+    if db_path:
+        pass
+    else:
+        current_real_dir = os.path.dirname(os.path.realpath(__file__))
+        db_path = os.path.join(current_real_dir, db_path)
     if not os.path.exists(db_path):
         raise Exception('File does not exist: %s' % db_path)
 
@@ -67,7 +70,6 @@ def calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite'):
     exec_result = execute_query_distributed(pairs, db_path, num_workers)
 
     reliablity_score = []
-    reliablity_score_dict = {}
     for result in exec_result:
         key = result['id']
         ans_real = result['real']
@@ -93,9 +95,8 @@ def calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite'):
         else:
             import pdb; pdb.set_trace()
         reliablity_score.append(score)
-        reliablity_score_dict[key] = score
 
-    return reliablity_score_dict
+    return reliablity_score
 
 def penalize(scores, penalty=1):
     return np.mean([score*penalty if score == -1 else score for score in scores])

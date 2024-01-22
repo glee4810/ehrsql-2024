@@ -23,7 +23,7 @@ real_dict = {id_: post_process_sql(truth[id_]) for id_ in truth}
 pred_dict = {id_: post_process_sql(prediction[id_]) for id_ in prediction}
 assert set(real_dict) == set(pred_dict), "IDs do not match"
 
-scores = calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite')
+scores = calculate_score(real_dict, pred_dict)
 accuracy0 = penalize(scores, penalty=0)
 accuracy10 = penalize(scores, penalty=10)
 accuracyN = penalize(scores, penalty=len(scores))
