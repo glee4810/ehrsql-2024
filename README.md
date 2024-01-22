@@ -90,6 +90,10 @@ We follow the same table information style used in [Spider](https://github.com/t
 {
     "column_names": [
       [
+        -1,
+        "*"
+      ],      
+      [
         0,
         "row id"
       ],
@@ -109,31 +113,36 @@ We follow the same table information style used in [Spider](https://github.com/t
     ],
     "column_names_original": [
       [
+        -1,
+        "*"
+      ],      
+      [
         0,
-        "ROW_ID"
+        "row_id"
       ],
       [
         0,
-        "SUBJECT_ID"
+        "subject_id"
       ],
       [
         0,
-        "GENDER"
+        "gender"
       ],
       [
         0,
-        "DOB"
+        "dob"
       ],
       ...
     ],
     "column_types": [
+      "text",
       "number",
       "number",
       "text",
       "time",
       ...
     ],
-    "db_id": "mimic_iii",
+    "db_id": "mimic_iv",
     "foreign_keys": [
       [
         7,
@@ -143,7 +152,7 @@ We follow the same table information style used in [Spider](https://github.com/t
     ],
     "primary_keys": [
       1,
-      5,
+      6,
       ...
     ],
     "table_names": [
@@ -152,8 +161,8 @@ We follow the same table information style used in [Spider](https://github.com/t
       ...
     ],
     "table_names_original": [
-      "PATIENTS",
-      "ADMISSIONS",
+      "patients",
+      "admissions",
       ...
     ]
   }
