@@ -55,7 +55,7 @@ def calculate_score(real_dict, pred_dict, db_path=None):
         pass
     else:
         current_real_dir = os.path.dirname(os.path.realpath(__file__))
-        db_path = os.path.join(current_real_dir, db_path)
+        db_path = os.path.join(current_real_dir, 'mimic_iv.sqlite')
     if not os.path.exists(db_path):
         raise Exception('File does not exist: %s' % db_path)
 
