@@ -13,7 +13,7 @@ def config():
     parser.add_argument("--deid", action="store_true", help="do deidentification")
     parser.add_argument("--timeshift", action="store_true", help="do time shift")
     parser.add_argument("--start_year", default=None, type=int, help="start sampling year")
-    parser.add_argument("--time_span", default=None, type=int, help="time span starting from start_year"
+    parser.add_argument("--time_span", default=None, type=int, help="time span starting from start_year")
     parser.add_argument("--cur_patient_ratio", default=0.0, type=float, help="ratio of inpatient")
     parser.add_argument("--current_time", default=None, type=str, help="any record past current_time is removed")
     args = parser.parse_args()
