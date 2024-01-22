@@ -1,11 +1,10 @@
 import json
 import os
 import sys
-import time
 import sqlite3
 import numpy as np
 import pandas as pd
-from reliability_score import calculate_score
+from reliability_score import calculate_score, penalize
 from postprocessing import post_process_sql
 
 reference_dir = os.path.join(sys.argv[1], 'ref')
@@ -23,13 +22,17 @@ start = time.time()
 real_dict = {id_: post_process_sql(truth[id_]) for id_ in truth}
 pred_dict = {id_: post_process_sql(prediction[id_]) for id_ in prediction}
 assert set(real_dict) == set(pred_dict), "IDs do not match"
-accuracy0, accuracy10, accuracyN = calculate_score(real_dict, pred_dict)
-duration = time.time() - start
+
+scores = calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite')
+accuracy0 = penalize(scores, penalty=0)
+accuracy10 = penalize(scores, penalty=10)
+accuracyN = penalize(scores, penalty=len(scores))
+
 print('Scores:')
 scores = {
-    'accuracy0': accuracy0,
-    'accuracy10': accuracy10,
-    'accuracyN': accuracyN
+    'accuracy0': accuracy0*100,
+    'accuracy10': accuracy10*100,
+    'accuracyN': accuracyN*100
 }
 print(scores)
 
