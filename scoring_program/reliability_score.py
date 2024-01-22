@@ -98,4 +98,4 @@ def calculate_score(real_dict, pred_dict, db_path='mimic_iv.sqlite'):
     return reliablity_score_dict
 
 def penalize(scores, penalty=1):
-    return np.mean([s*0 if s == -1 else s for s in scores])
+    return np.mean([score*penalty if score == -1 else score for score in scores])
