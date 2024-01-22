@@ -51,6 +51,7 @@ This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://cli
 ### Data Format
 
 For the task, we have two types of files for each of the training, validation, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files.
+
 #### Input Data (\*_data.json)
 A list of python dictionary in the JSON format:
 ```
@@ -67,6 +68,107 @@ A list of python dictionary in the JSON format:
   id -> Identifier of the example,
   label -> Label (SQL query or 'null')
 }
+```
+
+
+
+#### Table Schema
+
+We follow the same table information style used in [Spider](https://github.com/taoyds/spider). `tables.json` contains the following information for both databases:
+
+- `db_id`: the ID of the database
+- `table_names_original`: the original table names stored in the database.
+- `table_names`: the cleaned and normalized table names.
+- `column_names_original`: the original column names stored in the database. Each column has the format `[0, "id"]`. `0` is the index of the table name in `table_names`. `"id"` is the column name. 
+- `column_names`: the cleaned and normalized column names.
+- `column_types`: the data type of each column
+- `foreign_keys`: the foreign keys in the database. `[7, 2]` indicates the column indices in `column_names`. that correspond to foreign keys in two different tables.
+- `primary_keys`: the primary keys in the database. Each number represents the index of `column_names`.
+
+
+```json
+{
+    "column_names": [
+      [
+        0,
+        "row id"
+      ],
+      [
+        0,
+        "subject id"
+      ],
+      [
+        0,
+        "gender"
+      ],
+      [
+        0,
+        "dob"
+      ],
+      ...
+    ],
+    "column_names_original": [
+      [
+        0,
+        "ROW_ID"
+      ],
+      [
+        0,
+        "SUBJECT_ID"
+      ],
+      [
+        0,
+        "GENDER"
+      ],
+      [
+        0,
+        "DOB"
+      ],
+      ...
+    ],
+    "column_types": [
+      "number",
+      "number",
+      "text",
+      "time",
+      ...
+    ],
+    "db_id": "mimic_iii",
+    "foreign_keys": [
+      [
+        7,
+        2
+      ],
+      ...
+    ],
+    "primary_keys": [
+      1,
+      5,
+      ...
+    ],
+    "table_names": [
+      "patients",
+      "admissions",
+      ...
+    ],
+    "table_names_original": [
+      "PATIENTS",
+      "ADMISSIONS",
+      ...
+    ]
+  }
+```
+
+
+#### Database
+
+We use the [MIMIC-IV database demo](https://physionet.org/content/mimic-iv-demo/2.2/), which anyone can access the files as long as they conform to the terms of the [Open Data Commons Open Database License v1.0](https://physionet.org/content/mimic-iv-demo/view-license/2.2/).
+
+Once downloaded, run the code below to preprocess the database. This step involves time-shifting and value deduplication, and more. 
+
+```
+cd preprocess
+bash preprocess.sh
 ```
 
 
