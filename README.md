@@ -171,7 +171,14 @@ We follow the same table information style used in [Spider](https://github.com/t
 
 #### Database
 
-We use the [MIMIC-IV database demo](https://physionet.org/content/mimic-iv-demo/2.2/), which anyone can access the files as long as they conform to the terms of the [Open Data Commons Open Database License v1.0](https://physionet.org/content/mimic-iv-demo/view-license/2.2/).
+We use the [MIMIC-IV database demo](https://physionet.org/content/mimic-iv-demo/2.2/), which anyone can access the files as long as they conform to the terms of the [Open Data Commons Open Database License v1.0](https://physionet.org/content/mimic-iv-demo/view-license/2.2/). If you agree to the terms, use the bash command below to download the database.
+
+```
+!wget https://physionet.org/static/published-projects/mimic-iv-demo/mimic-iv-clinical-database-demo-2.2.zip
+!unzip mimic-iv-clinical-database-demo-2.2
+!gunzip -r mimic-iv-clinical-database-demo-2.2
+```
+
 
 Once downloaded, run the code below to preprocess the database. This step involves time-shifting, value deduplication in tables, and more.
 
