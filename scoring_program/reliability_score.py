@@ -47,7 +47,7 @@ def execute_query_distributed(pairs, db_path, num_workers=1):
 
     return exec_result
 
-def calculate_score(real_dict, pred_dict, db_path=None):
+def calculate_score(real_dict, pred_dict, db_path=None, return_as_dict=False):
 
     assert set(real_dict) == set(pred_dict), "IDs do not match"
 
@@ -70,6 +70,7 @@ def calculate_score(real_dict, pred_dict, db_path=None):
     exec_result = execute_query_distributed(pairs, db_path, num_workers)
 
     reliablity_score = []
+    reliablity_score_dict = {}
     for result in exec_result:
         key = result['id']
         ans_real = result['real']
@@ -95,8 +96,12 @@ def calculate_score(real_dict, pred_dict, db_path=None):
         else:
             import pdb; pdb.set_trace()
         reliablity_score.append(score)
+        reliablity_score_dict[key] = score
 
-    return reliablity_score
+    if return_as_dict:
+        return reliablity_score_dict
+    else:
+        return reliablity_score
 
 def penalize(scores, penalty=1):
     return np.mean([score*penalty if score == -1 else score for score in scores])

@@ -185,6 +185,7 @@ Once downloaded, run the code below to preprocess the database. This step involv
 ```
 cd preprocess
 bash preprocess.sh
+cd ..
 ```
 
 
