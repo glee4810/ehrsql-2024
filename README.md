@@ -188,20 +188,22 @@ The scorer for the task is located in the scorer module. The scorer (scoring.py)
 
 
 
-
 ## <a name="baselines"></a>Baseline
 
-### "Dummy" Sample Submission
 
-TBD
+We provide three sample baseline code examples on Colab as starters.
 
-### Option 1: Local-Model Sample Submission (T5)
+### ["Dummy" Model Sample Code](https://colab.research.google.com/drive/1ZRhWr_o6-vyc0FKGAf1nuGZVycqyy-p-?usp=sharing)
 
-TBD
+Generates 'null' for all predictions. This will mark all questions as unanswerable, and the reliability scores will match the percentage of unanswerable questions in the evaluation set.
 
-### Option 2: OpenAI Model Sample Submission (ChatGPT)
+### [Local Model Sample Code (T5)](https://colab.research.google.com/drive/1MmwWGcCIZ_B8ZQk761pehId1T7CYs5D1?usp=sharing)
 
-TBD
+Generates predictions using T5.
+
+### [OpenAI Model Sample Code (ChatGPT)](https://colab.research.google.com/drive/1OpmRjbHXO7u8_6_meCy_g-ukqSlZDanQ?usp=sharing)
+
+Generates predictions using ChatGPT. 
 
 
 
