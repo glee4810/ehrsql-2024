@@ -29,12 +29,12 @@ accuracy10 = penalize(scores, penalty=10)
 accuracyN = penalize(scores, penalty=len(scores))
 
 print('Scores:')
-scores = {
+scores_dict = {
     'accuracy0': accuracy0*100,
     'accuracy10': accuracy10*100,
     'accuracyN': accuracyN*100
 }
-print(scores)
+print(scores_dict)
 
 with open(os.path.join(score_dir, 'scores.json'), 'w') as score_file:
-    score_file.write(json.dumps(scores))
+    score_file.write(json.dumps(scores_dict))
