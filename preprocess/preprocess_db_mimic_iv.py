@@ -207,6 +207,7 @@ class Build_MIMIC_IV(Sampler):
                 offset_dict=self.subjectid2admittime_dict,
                 patient_col="subject_id",
             )
+            ADMISSIONS_table = ADMISSIONS_table.dropna(subset=["admittime"])
             ADMISSIONS_table["dischtime"] = adjust_time(
                 ADMISSIONS_table,
                 "dischtime",
@@ -215,7 +216,7 @@ class Build_MIMIC_IV(Sampler):
                 offset_dict=self.subjectid2admittime_dict,
                 patient_col="subject_id",
             )
-            ADMISSIONS_table = ADMISSIONS_table.dropna(subset=["admittime"])
+            ADMISSIONS_table['discharge_location'] = [loc if pd.notnull(t) else None for loc, t in zip(ADMISSIONS_table["discharge_location"], ADMISSIONS_table["dischtime"])]
             # flags = [] # ADDED
             # for id_, flag in zip(ADMISSIONS_table['subject_id'].values, ADMISSIONS_table['hospital_expire_flag'].values):
             #     if flag == 1 and PATIENTS_table['dod'][PATIENTS_table['subject_id']==id_].isnull().any():
