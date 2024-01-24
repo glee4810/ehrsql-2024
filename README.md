@@ -237,7 +237,8 @@ For general communications: Please, use our Google group at [https://groups.goog
 
 Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist.ac.kr/).
 
-- Edward Choi
-- Gyubok Lee
-- Sunjun Kweon
-- Seongsu Bae
+* [Edward Choi](https://mp2893.com/)
+* [Gyubok Lee](https://sites.google.com/view/gyuboklee)
+* Sunjun Kweon
+* [Seongsu Bae](https://seongsubae.info/)
+
