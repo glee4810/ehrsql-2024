@@ -189,7 +189,7 @@ cd ..
 
 ## <a name="scorer_and_official_evaluation_metric"></a>Evaluation Metric
 
-The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation metric. More details are in the [Task Desciption](https://www.codabench.org/competitions/1889) tab.
+The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation score. More details about the metric in the [Evaluation](https://www.codabench.org/competitions/1889) tab on the task website.
 
 
 
