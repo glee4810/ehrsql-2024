@@ -5,7 +5,7 @@
 </p>
 
 
-This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024). Our competition is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
+This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024) and is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
 
 Electronic Health Records (EHRs) are relational databases that store a patient’s entire medical history in the hospital. From hospital admission to patient treatment and discharge, EHRs record and store various medical events that occur during a patient's hospital stay. While they are invaluable sources of clinical knowledge, exploring them beyond a pre-defined set of queries requires proficiency in query languages such as SQL. An alternative approach is to build a text-to-SQL system that can automatically translate natural language questions directly into the corresponding SQL queries.
 
