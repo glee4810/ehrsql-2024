@@ -232,7 +232,7 @@ Submit your prediction file on our task website on Codabench. For more details, 
 
 ## <a name="contacts"></a>Contacts
 
-For general communications: Please, use our Google group at [https://groups.google.com/g/ehrsql/](https://https://groups.google.com/g/ehrsql-2024/). Important announcements and discussions are posted and discussed in our Google group.
+For general communications: Please, use our Google group at [https://groups.google.com/g/ehrsql-2024/](https://groups.google.com/g/ehrsql-2024/). Important announcements and discussions are posted and discussed in our Google group.
 
 
 

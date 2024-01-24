@@ -79,7 +79,7 @@ class Build_MIMIC_IV(Sampler):
             sql_script = sql_file.read()
         self.cur.executescript(sql_script)
 
-        self.chartevent2itemid = {k.lower(): v for k, v in CHARTEVENT2ITEMID.items()}  # lower case
+        self.chartevent2itemid = {k.lower(): v for k, v in CHARTEVENT2ITEMID.items()}  # Database records are converted to lowercase to remove duplicates that differ only in case sensitivity
 
     def build_admission_table(self):
         print("Processing patients, admissions, icustays, transfers")
