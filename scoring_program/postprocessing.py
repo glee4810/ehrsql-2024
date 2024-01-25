@@ -1,6 +1,6 @@
 import re
 
-__current_time = "2105-12-31 23:59:00"
+__current_time = "2100-12-31 23:59:00"
 __precomputed_dict = {
                     'temperature': (35.5, 38.1),
                     'sao2': (95.0, 100.0),
@@ -28,7 +28,6 @@ def post_process_sql(query):
                 vital_range = __precomputed_dict[processed_vital_name]
                 query = query.replace(vital_lower_expr, f"{vital_range[0]}").replace(vital_upper_expr, f"{vital_range[1]}")
 
-    query = query.replace("''", "'")
     query = query.replace("%y", "%Y").replace('%j', '%J')
 
     return query
