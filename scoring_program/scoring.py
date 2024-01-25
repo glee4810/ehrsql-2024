@@ -18,7 +18,6 @@ with open(os.path.join(prediction_dir, 'prediction.json')) as f:
     prediction = json.load(f)
 
 print('Checking Accuracy')
-start = time.time()
 real_dict = {id_: post_process_sql(truth[id_]) for id_ in truth}
 pred_dict = {id_: post_process_sql(prediction[id_]) for id_ in prediction}
 assert set(real_dict) == set(pred_dict), "IDs do not match"
