@@ -16,7 +16,9 @@ The goal of the task is to develop a text-to-SQL system specifically tailored fo
 
 
 
-## <a name="timeline"></a>Timeline (AoE)
+## <a name="timeline"></a>Timeline
+
+All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe))
 
 * Registration opens: Monday January 29, 2024
 * Training and validation data release: Monday January 29, 2024
@@ -40,8 +42,8 @@ The goal of the task is to develop a text-to-SQL system specifically tailored fo
 
 ### Data Relase
 
-- The training and validation data will be released on January 29, 2024.
-- The test data will be released on February 26, 2024.
+- The training and validation data will be released on January 29, 2024 (AoE).
+- The test data will be released on February 26, 2024 (AoE).
 
 
 ### Data Format
