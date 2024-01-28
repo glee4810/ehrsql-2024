@@ -16,7 +16,7 @@ The goal of the task is to develop a text-to-SQL system specifically tailored fo
 
 
 
-## <a name="timeline"></a>Timeline
+## <a name="timeline"></a>Timeline (AoE)
 
 * Registration opens: Monday January 29, 2024
 * Training and validation data release: Monday January 29, 2024
