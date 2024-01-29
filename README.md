@@ -34,16 +34,10 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 
 ## <a name="dataset"></a>Dataset
 
-<!-- ### Statistics
+### Statistics
 | #Train | #Valid | #Test |
 |:-------:|:-------:|:-------:|
-| 9680 (TBD) | 1260 (TBD) | 1698 (TBD) | -->
-
-
-### Data Relase
-
-- The training and validation data will be released on January 29, 2024 (AoE).
-- The test data will be released on February 26, 2024 (AoE).
+| 5124 | 1163 | 1167 |
 
 
 ### Data Format

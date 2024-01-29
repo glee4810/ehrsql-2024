@@ -24,12 +24,14 @@ assert set(real_dict) == set(pred_dict), "IDs do not match"
 
 scores = calculate_score(real_dict, pred_dict)
 accuracy0 = penalize(scores, penalty=0)
+accuracy5 = penalize(scores, penalty=5)
 accuracy10 = penalize(scores, penalty=10)
 accuracyN = penalize(scores, penalty=len(scores))
 
 print('Scores:')
 scores_dict = {
     'accuracy0': accuracy0*100,
+    'accuracy5': accuracy5*100,
     'accuracy10': accuracy10*100,
     'accuracyN': accuracyN*100
 }
