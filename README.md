@@ -166,7 +166,7 @@ cd ..
 
 ## <a name="evaluation"></a>Evaluation
 
-The scorer (`scoring.py` in the scorer module) will report the official evaluation score for the task. For more details about the metric, please refer to the [Evaluation](https://www.codabench.org/competitions/1889) tab on the Codabench website.
+The scorer (`scoring.py` in the scoring_program module) will report the official evaluation score for the task. For more details about the metric, please refer to the [Evaluation](https://www.codabench.org/competitions/1889) tab on the Codabench website.
 
 
 
