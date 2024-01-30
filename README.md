@@ -7,14 +7,14 @@ Electronic Health Records (EHRs) are relational databases that store the entire 
 
 This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024).
 
-<p align="left" float="left">
-  <img src="image/logo.png" height="100" />
-</p>
-
 - Task overview: [https://sites.google.com/view/ehrsql-2024](https://sites.google.com/view/ehrsql-2024)
 - Task platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889)
 - Dataset: [https://github.com/glee4810/ehrsql-2024](https://github.com/glee4810/ehrsql-2024)
 
+
+<p align="left" float="left">
+  <img src="image/logo.png" height="100" />
+</p>
 
 [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation](#evaluation) | [Baselines](#baselines) | [Submission](#submission) | [Contact](#contact) | [Organizer](#organizer)
 
