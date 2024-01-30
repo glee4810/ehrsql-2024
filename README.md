@@ -44,7 +44,7 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 
 For the task, we have two types of files for each of the training, validation, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files.
 
-#### Input Data (\*_data.json)
+##### Input Data (\*_data.json)
 A list of python dictionary in the JSON format:
 ```
 {
@@ -53,7 +53,7 @@ A list of python dictionary in the JSON format:
 }
 ```
 
-#### Output Data (\*_label.json)
+##### Output Data (\*_label.json)
 A list of python dictionary in the JSON format:
 ```
 {
@@ -64,7 +64,7 @@ A list of python dictionary in the JSON format:
 
 
 
-#### Table Schema
+##### Table Schema
 
 We follow the same table information style used in [Spider](https://github.com/taoyds/spider). `tables.json` contains the following information for both databases:
 
@@ -93,14 +93,6 @@ We follow the same table information style used in [Spider](https://github.com/t
         0,
         "subject id"
       ],
-      [
-        0,
-        "gender"
-      ],
-      [
-        0,
-        "dob"
-      ],
       ...
     ],
     "column_names_original": [
@@ -116,22 +108,12 @@ We follow the same table information style used in [Spider](https://github.com/t
         0,
         "subject_id"
       ],
-      [
-        0,
-        "gender"
-      ],
-      [
-        0,
-        "dob"
-      ],
       ...
     ],
     "column_types": [
       "text",
       "number",
       "number",
-      "text",
-      "time",
       ...
     ],
     "db_id": "mimic_iv",
@@ -161,7 +143,7 @@ We follow the same table information style used in [Spider](https://github.com/t
 ```
 
 
-#### Database
+### Database
 
 We use the [MIMIC-IV database demo](https://physionet.org/content/mimic-iv-demo/2.2/), which anyone can access the files as long as they conform to the terms of the [Open Data Commons Open Database License v1.0](https://physionet.org/content/mimic-iv-demo/view-license/2.2/). If you agree to the terms, use the bash command below to download the database.
 
@@ -193,15 +175,15 @@ The scorer for the task is located in the scorer module. The scorer (scoring.py)
 
 We provide three sample baseline code examples on Colab as starters.
 
-### ["Dummy" Model Sample Code](https://colab.research.google.com/drive/1ZRhWr_o6-vyc0FKGAf1nuGZVycqyy-p-?usp=sharing)
+#### ["Dummy" Model Sample Code](https://colab.research.google.com/drive/1ZRhWr_o6-vyc0FKGAf1nuGZVycqyy-p-?usp=sharing)
 
 Generates 'null' for all predictions. This will mark all questions as unanswerable, and the reliability scores will match the percentage of unanswerable questions in the evaluation set.
 
-### [Local Model Sample Code (T5)](https://colab.research.google.com/drive/1MmwWGcCIZ_B8ZQk761pehId1T7CYs5D1?usp=sharing)
+#### [Local Model Sample Code (T5)](https://colab.research.google.com/drive/1MmwWGcCIZ_B8ZQk761pehId1T7CYs5D1?usp=sharing)
 
 Generates predictions using T5.
 
-### [OpenAI Model Sample Code (ChatGPT)](https://colab.research.google.com/drive/1OpmRjbHXO7u8_6_meCy_g-ukqSlZDanQ?usp=sharing)
+#### [OpenAI Model Sample Code (ChatGPT)](https://colab.research.google.com/drive/1OpmRjbHXO7u8_6_meCy_g-ukqSlZDanQ?usp=sharing)
 
 Generates predictions using ChatGPT. 
 
@@ -209,7 +191,7 @@ Generates predictions using ChatGPT.
 
 ## <a name="submission"></a>Submission
 
-### File Format
+#### File Format
 
 After saving your prediction file, compress (zip) it using a bash command, for example:
 ```
@@ -222,13 +204,13 @@ Submit your prediction file on our task website on Codabench. For more details, 
 
 
 
-## <a name="contacts"></a>Contacts
+## <a name="contacts"></a>Contact
 
-For general communications: Please, use our Google group at [https://groups.google.com/g/ehrsql-2024/](https://groups.google.com/g/ehrsql-2024/). Important announcements and discussions are posted and discussed in our Google group.
+For more updates, join our Google group [https://groups.google.com/g/ehrsql-2024/](https://groups.google.com/g/ehrsql-2024/).
 
 
 
-## <a name="organizers"></a>Organizers
+## <a name="organizers"></a>Organizer
 
 Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist.ac.kr/).
 
