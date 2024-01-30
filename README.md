@@ -8,8 +8,11 @@
 
 
 Task overview: [https://sites.google.com/view/ehrsql-2024](https://sites.google.com/view/ehrsql-2024)
+
 Task platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889)
+
 Dataset: [https://github.com/glee4810/ehrsql-2024](https://github.com/glee4810/ehrsql-2024)
+
 
 
 In this task, we aim to develop a text-to-SQL system specifically tailored for EHRs. This system will be unique in its ability to handle a broad spectrum of questions reliably. It must not only generate precise SQL queries for questions that the EHR data can answer but also recognize questions that extend beyond the database schema, avoiding inaccurate SQL generation. To be more specific, the system is expected to process numerous answerable questions, including those about the MIMIC-IV database [1], which involve topics like patient demographics, vital signs, and disease survival rates [2]. Additionally, the system must avoid clinically relevant questions that are beyond the scope of the database schema and those adversarially crafted to test the system's limits. Successfully achieving this goal will lead to the creation of a reliable question-answering system for EHRs, significantly improving how clinical knowledge is explored and utilized within the hospital.
