@@ -1,24 +1,19 @@
 # Reliable Text-to-SQL on Electronic Health Records - Clinical NLP Workshop @ NAACL 2024
 
 
+## Overview
+
+Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record numerous aspects of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond a predefined set of queries requires skills in query languages like SQL. To make this process more accessible, one could develop a text-to-SQL system that automatically translates natural language questions into corresponding SQL queries. In this task, we aim to develop a reliable text-to-SQL system specifically tailored for EHRs.
+
+This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024).
 
 <p align="left" float="left">
   <img src="image/logo.png" height="100" />
 </p>
 
-
-## Overview
-
-Task overview: [https://sites.google.com/view/ehrsql-2024](https://sites.google.com/view/ehrsql-2024)
-
-Task platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889)
-
-Dataset: [https://github.com/glee4810/ehrsql-2024](https://github.com/glee4810/ehrsql-2024)
-
-
-Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record numerous aspects of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond a predefined set of queries requires skills in query languages like SQL. To make this process more accessible, one could develop a text-to-SQL system that automatically translates natural language questions into corresponding SQL queries. In this task, we aim to develop a reliable text-to-SQL system specifically tailored for EHRs.
-
-This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024).
+- Task overview: [https://sites.google.com/view/ehrsql-2024](https://sites.google.com/view/ehrsql-2024)
+- Task platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889)
+- Dataset: [https://github.com/glee4810/ehrsql-2024](https://github.com/glee4810/ehrsql-2024)
 
 
 [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation](#evaluation) | [Baselines](#baselines) | [Submission](#submission) | [Contact](#contact) | [Organizer](#organizer)
