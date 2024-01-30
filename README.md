@@ -12,7 +12,7 @@ Electronic Health Records (EHRs) are relational databases that store the entire 
 The goal of the task is to develop a text-to-SQL system specifically tailored for EHRs. This system will be unique in its ability to handle a broad spectrum of questions. It must not only generate precise SQL queries for questions that the EHR data can answer but also recognize questions that extend beyond the database schema, avoiding inaccurate SQL generation. To be more specific, the system is expected to process numerous answerable questions, including those about the [MIMIC-IV](https://physionet.org/content/mimiciv/2.2) database, which involve topics like patient demographics, vital signs, and disease survival rates ([EHRSQL](https://github.com/glee4810/EHRSQL)). Additionally, the system must avoid clinically relevant questions that are beyond the scope of the database schema and those adversarially crafted to test its limits. Achieving this goal successfully will result in the development of a robust question-answering system for EHRs, greatly enhancing the way clinical knowledge is explored and utilized in hospitals.
 
 
-[Timeline](#timeline) | [Dataset](#dataset) | [Evaluation Metric](#scorer_and_official_evaluation_metric) | [Baselines](#baselines) | [Submission](#submission) | [Communication and Contact](#communication_and_contacts) | [Organizers](#organizers)
+[Timeline](#timeline) | [Dataset](#dataset) | [Evaluation](#evaluation) | [Baselines](#baselines) | [Submission](#submission) | [Contact](#contact) | [Organizers](#organizer)
 
 
 
@@ -164,9 +164,9 @@ cd ..
 
 
 
-## <a name="scorer_and_official_evaluation_metric"></a>Evaluation Metric
+## <a name="evaluation"></a>Evaluation
 
-The scorer for the task is located in the scorer module. The scorer (scoring.py) will report the official evaluation score. More details about the metric in the [Evaluation](https://www.codabench.org/competitions/1889) tab on the task website.
+The scorer (scoring.py in the scorer module) will report the official evaluation score for the task. For more details about the metric, please refer to the [Evaluation](https://www.codabench.org/competitions/1889) tab on the Codabench website.
 
 
 
@@ -175,15 +175,15 @@ The scorer for the task is located in the scorer module. The scorer (scoring.py)
 
 We provide three sample baseline code examples on Colab as starters.
 
-#### ["Dummy" Model Sample Code](https://colab.research.google.com/drive/1ZRhWr_o6-vyc0FKGAf1nuGZVycqyy-p-?usp=sharing)
+### ["Dummy" Model Sample Code](https://colab.research.google.com/drive/1ZRhWr_o6-vyc0FKGAf1nuGZVycqyy-p-?usp=sharing)
 
 Generates 'null' for all predictions. This will mark all questions as unanswerable, and the reliability scores will match the percentage of unanswerable questions in the evaluation set.
 
-#### [Local Model Sample Code (T5)](https://colab.research.google.com/drive/1MmwWGcCIZ_B8ZQk761pehId1T7CYs5D1?usp=sharing)
+### [Local Model Sample Code (T5)](https://colab.research.google.com/drive/1MmwWGcCIZ_B8ZQk761pehId1T7CYs5D1?usp=sharing)
 
 Generates predictions using T5.
 
-#### [OpenAI Model Sample Code (ChatGPT)](https://colab.research.google.com/drive/1OpmRjbHXO7u8_6_meCy_g-ukqSlZDanQ?usp=sharing)
+### [OpenAI Model Sample Code (ChatGPT)](https://colab.research.google.com/drive/1OpmRjbHXO7u8_6_meCy_g-ukqSlZDanQ?usp=sharing)
 
 Generates predictions using ChatGPT. 
 
@@ -198,19 +198,20 @@ After saving your prediction file, compress (zip) it using a bash command, for e
 zip predictions.zip prediction.json
 ```
 
+
 ### Submitting the File
 
 Submit your prediction file on our task website on Codabench. For more details, see the [Submission](https://www.codabench.org/competitions/1889) tab.
 
 
 
-## <a name="contacts"></a>Contact
+## <a name="contact"></a>Contact
 
 For more updates, join our Google group [https://groups.google.com/g/ehrsql-2024/](https://groups.google.com/g/ehrsql-2024/).
 
 
 
-## <a name="organizers"></a>Organizer
+## <a name="organizer"></a>Organizer
 
 Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist.ac.kr/).
 
