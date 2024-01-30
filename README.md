@@ -203,7 +203,7 @@ zip predictions.zip prediction.json
 ```
 
 
-### Submitting the File
+#### Submitting the File
 
 Submit your prediction file on our task website on Codabench. For more details, see the [Submission](https://www.codabench.org/competitions/1889) tab.
 
