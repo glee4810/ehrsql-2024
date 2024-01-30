@@ -166,7 +166,7 @@ cd ..
 
 ## <a name="evaluation"></a>Evaluation
 
-The scorer (scoring.py in the scorer module) will report the official evaluation score for the task. For more details about the metric, please refer to the [Evaluation](https://www.codabench.org/competitions/1889) tab on the Codabench website.
+The scorer (`scoring.py` in the scorer module) will report the official evaluation score for the task. For more details about the metric, please refer to the [Evaluation](https://www.codabench.org/competitions/1889) tab on the Codabench website.
 
 
 
@@ -213,7 +213,7 @@ For more updates, join our Google group [https://groups.google.com/g/ehrsql-2024
 
 ## <a name="organizer"></a>Organizer
 
-Organizers are from [EdLab](https://mp2893.com/) @ [KAIST AI](https://gsai.kaist.ac.kr/).
+Organizers are from [EdLab](https://mp2893.com/) @ [KAIST](https://gsai.kaist.ac.kr/).
 
 * [Edward Choi](https://mp2893.com/)
 * [Gyubok Lee](https://sites.google.com/view/gyuboklee)
