@@ -1,15 +1,21 @@
 # Reliable Text-to-SQL on Electronic Health Records - Clinical NLP Workshop @ NAACL 2024
 
+
+
 <p align="left" float="left">
   <img src="image/logo.png" height="100" />
 </p>
 
 
-This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024) and is launched on the Codabench platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889).
+Task overview: [https://sites.google.com/view/ehrsql-2024](https://sites.google.com/view/ehrsql-2024)
+Task platform: [https://www.codabench.org/competitions/1889](https://www.codabench.org/competitions/1889)
+Dataset: [https://github.com/glee4810/ehrsql-2024](https://github.com/glee4810/ehrsql-2024)
 
-Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record every aspect of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond predefined queries typically demands skills in query languages like SQL. To make this process more accessible, one could develop a text-to-SQL system that automatically translates questions in natural language into corresponding SQL queries.
 
-The goal of the task is to develop a text-to-SQL system specifically tailored for EHRs. This system will be unique in its ability to handle a broad spectrum of questions. It must not only generate precise SQL queries for questions that the EHR data can answer but also recognize questions that extend beyond the database schema, avoiding inaccurate SQL generation. To be more specific, the system is expected to process numerous answerable questions, including those about the [MIMIC-IV](https://physionet.org/content/mimiciv/2.2) database, which involve topics like patient demographics, vital signs, and disease survival rates ([EHRSQL](https://github.com/glee4810/EHRSQL)). Additionally, the system must avoid clinically relevant questions that are beyond the scope of the database schema and those adversarially crafted to test its limits. Achieving this goal successfully will result in the development of a robust question-answering system for EHRs, greatly enhancing the way clinical knowledge is explored and utilized in hospitals.
+In this task, we aim to develop a text-to-SQL system specifically tailored for EHRs. This system will be unique in its ability to handle a broad spectrum of questions reliably. It must not only generate precise SQL queries for questions that the EHR data can answer but also recognize questions that extend beyond the database schema, avoiding inaccurate SQL generation. To be more specific, the system is expected to process numerous answerable questions, including those about the MIMIC-IV database [1], which involve topics like patient demographics, vital signs, and disease survival rates [2]. Additionally, the system must avoid clinically relevant questions that are beyond the scope of the database schema and those adversarially crafted to test the system's limits. Successfully achieving this goal will lead to the creation of a reliable question-answering system for EHRs, significantly improving how clinical knowledge is explored and utilized within the hospital.
+
+
+This task is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024).
 
 
 [Timeline](#timeline) | [Dataset](#dataset) | [Evaluation](#evaluation) | [Baselines](#baselines) | [Submission](#submission) | [Contact](#contact) | [Organizers](#organizer)
