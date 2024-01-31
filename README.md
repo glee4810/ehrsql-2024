@@ -1,7 +1,7 @@
 # Reliable Text-to-SQL on Electronic Health Records - Clinical NLP Workshop @ NAACL 2024
 
 
-## Overview
+## (Overview](https://sites.google.com/view/ehrsql-2024)
 
 Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record numerous aspects of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond a predefined set of queries requires skills in query languages like SQL. To make this process more accessible, one could develop a text-to-SQL system that automatically translates natural language questions into corresponding SQL queries. In this task, we aim to develop a reliable text-to-SQL system specifically tailored for EHRs.
 
