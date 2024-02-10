@@ -24,14 +24,15 @@ This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical
 
 All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe))
 
-* Registration opens: Monday January 29, 2024
-* Training and validation data release: Monday January 29, 2024
-* Test data release: Monday February 26, 2024
-* Run submission due: Friday March 1, 2024
-* Code submission and fact sheet deadline: Monday March 4, 2024
-* Final result release: Monday March 11, 2024
-* Paper submission due: Tuesday March 19, 2024
-* Notification of acceptance: Tuesday April 16, 2024
+* ~~Registration opens: Monday January 29, 2024~~
+* ~~Training and validation data release: Monday January 29, 2024~~
+* Test data release: Tuesday March 26, 2024
+* Run submission due: Thursday March 28, 2024
+* Code submission and fact sheet deadline: Friday March 29, 2024
+* Final result release: Monday April 1, 2024
+* Paper submission period starts: Monday April 8, 2024
+* Paper submission due: Wednesday April 10, 2024
+* Notification of acceptance: Thursday April 18, 2024
 * Final versions of papers due: Wednesday April 24, 2024
 * Clinical NLP Workshop @ NAACL 2024: June 21 or 22, 2024, Mexico City, Mexico
 
