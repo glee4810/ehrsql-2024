@@ -17,16 +17,16 @@ from preprocess_utils import Sampler, adjust_time, read_csv, generate_random_dat
 
 
 CHARTEVENT2ITEMID = {
-    "Temperature Celsius": "223762",  # body temperature
-    "O2 saturation pulseoxymetry": "220277",  # Sao2
-    "Heart Rate": "220045",  # heart rate
-    "Respiratory Rate": "220210",  # respiration rate
-    "Arterial Blood Pressure systolic": "220050",  # systolic blood pressure
-    "Arterial Blood Pressure diastolic": "220051",  # diasolic blood pressure
-    "Arterial Blood Pressure mean": "220052",  # mean blood pressure
-    # "Admission Weight (Kg)": "226512",  # weight
-    "Daily Weight": "224639",  # majority labels for weight but not used in MIMIC-IV (followed by MIMIC-III)
-    "Height (cm)": "226730",  # height
+    "Temperature Celsius": 223762,  # body temperature
+    "O2 saturation pulseoxymetry": 220277,  # Sao2
+    "Heart Rate": 220045,  # heart rate
+    "Respiratory Rate": 220210,  # respiration rate
+    "Arterial Blood Pressure systolic": 220050,  # systolic blood pressure
+    "Arterial Blood Pressure diastolic": 220051,  # diasolic blood pressure
+    "Arterial Blood Pressure mean": 220052,  # mean blood pressure
+    # "Admission Weight (Kg)": 226512,  # weight
+    "Daily Weight": 224639,  # majority labels for weight but not used in MIMIC-IV (followed by MIMIC-III)
+    "Height (cm)": 226730,  # height
 }
 
 # Disambiguate values in the fields d_item.label, d_labitems.label, and prescription.drug, keeping only the most frequent label.
