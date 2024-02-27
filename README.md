@@ -54,8 +54,8 @@ For the task, we have two types of files for each of the train, dev, and test se
 
 ```
 {
-  "version" -> dataset version,
-	"data": [
+  "version" : dataset version,
+	"data" : [
 	  {
 		  "id" : sample identifier,
 			"question" : natural langauge question (either answerable or unanswerable given the MIMIC-IV schema),	
