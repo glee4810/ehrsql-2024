@@ -47,7 +47,7 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 
 ### Data Format
 
-For the task, we have two types of files for each of the train, dev, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files ([sample data](https://github.com/glee4810/ehrsql-2024/blob/master/sample_data/train/label.json)).
+For the task, we have two types of files for each of the train, dev, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files ([sample data](https://github.com/glee4810/ehrsql-2024/tree/master/sample_data/train)).
 
 
 #### Input Data (data.json)
