@@ -47,25 +47,37 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 
 ### Data Format
 
-For the task, we have two types of files for each of the training, validation, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files.
+For the task, we have two types of files for each of the train, dev, and test sets: data files (with names like \*_data.json) and label files (with names like \*_label.json). Data files contain the input data for the model, and label files contain the expected model outputs that share the same 'id's as the corresponding data files ([sample data](https://github.com/glee4810/ehrsql-2024/blob/master/sample_data/train/label.json)).
 
-##### Input Data (\*_data.json)
-A list of python dictionary in the JSON format:
+
+#### Input Data (data.json)
+
 ```
 {
-  id -> Identifier of the example,
-  question -> Input question (This can be either answerable or unanswerable given the MIMIC-IV schema)
+  "version" -> dataset version,
+	"data": [
+	  {
+		  "id" : sample identifier,
+			"question" : natural langauge question (either answerable or unanswerable given the MIMIC-IV schema),	
+	  },
+	...		
+	]
 }
 ```
 
-##### Output Data (\*_label.json)
-A list of python dictionary in the JSON format:
+Each object in the data list consists of an ID and the corresponding natural language question.
+
+
+#### Output Data (label.json)
+
 ```
 {
-  id -> Identifier of the example,
-  label -> Label (SQL query or 'null')
+  id -> sample identifier : label -> SQL query or 'null' if subject to abstention,
+	...
 }
 ```
+
+Each object has a key of a sample's ID and a value of the corresponding label.
 
 
 

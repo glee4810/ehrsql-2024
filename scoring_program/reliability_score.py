@@ -65,10 +65,7 @@ def calculate_score(real_dict, pred_dict, db_path=None, return_dict=False):
     for key in real_dict:
         pairs.append((key, real_dict[key], pred_dict[key]))
 
-    exec_real = []
-    exec_pred = []
     exec_result = execute_query_distributed(pairs, db_path, num_workers)
-
     reliablity_score = []
     reliablity_score_dict = {}
     for result in exec_result:
