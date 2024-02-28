@@ -5,7 +5,7 @@ import sqlite3
 import numpy as np
 import pandas as pd
 import multiprocessing as mp
-from scoring_utils import reliability_score, penalize
+from scoring_utils import process_answer, reliability_score, penalize
 from postprocessing import post_process_sql
 
 
@@ -15,27 +15,20 @@ score_dir = sys.argv[2]
 
 
 print('Load Data')
-with open(os.path.join(reference_dir, 'label.json')) as f:
+with open(os.path.join(reference_dir, 'answer.json')) as f: # gt SQL query
     real_dict = json.load(f)
-with open(os.path.join(prediction_dir, 'prediction.json')) as f:
-    pred_result = json.load(f)
-assert set(real_dict) == set(pred_result), "IDs do not match"
+with open(os.path.join(prediction_dir, 'prediction.json')) as f: # retrived answer (not SQL query)
+    pred_dict = json.load(f)
+assert set(real_dict) == set(pred_dict), "IDs do not match"
 
 
-real_dict = {id_: post_process_sql(real_dict[id_]) for id_ in real_dict}
-
-current_real_dir = os.path.dirname(os.path.realpath(__file__))
-db_path = os.path.join(current_real_dir, 'mimic_iv.sqlite')
-if not os.path.exists(db_path):
-    raise Exception('File does not exist: %s' % db_path)
-
-num_workers = mp.cpu_count()
-if num_workers > 1:
-    from scoring_utils import execute_all_distributed
-    real_result = execute_all_distributed(real_dict, db_path, tag='real', num_workers=num_workers)
-else:
-    from scoring_utils import execute_all
-    real_result = execute_all(real_dict, db_path, tag='real')
+# preprocess predicted answer to match the format as GT answer
+real_result = {}
+for key in real_dict:
+    real_result[key] = process_answer(real_dict[key])
+pred_result = {}
+for key in pred_dict:
+    pred_result[key] = process_answer(pred_dict[key])
 
 
 print('Checking Accuracy')
