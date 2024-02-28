@@ -5,9 +5,8 @@ import sqlite3
 import numpy as np
 import multiprocessing as mp
 
-
 def process_answer(ans):
-    return str(sorted([str(ret) for ret in ans])[:100]) # check only up to 100th record
+    return str(sorted([str(list(ret)) for ret in ans])[:100]) # check only up to 100th record
 
 def execute_sql(sql, db_path):
     con = sqlite3.connect(db_path)
