@@ -11,7 +11,10 @@ def process_item(item):
     return str(item)
 
 def process_answer(ans):
-    return str(sorted([[process_item(c) for c in row] for row in ans])[:100]) # check only up to 100th record
+    if type(ans)==str:
+        return ans
+    else:
+        return str(sorted([[process_item(c) for c in row] for row in ans])[:100]) # check only up to 100th record
 
 def execute_sql(sql, db_path):
     con = sqlite3.connect(db_path)

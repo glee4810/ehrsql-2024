@@ -24,16 +24,10 @@ assert set(real_dict) == set(pred_dict), "IDs do not match"
 # preprocess predicted answer to match the format as GT answer
 real_result = {}
 for key in real_dict:
-    if real_dict[key] != 'null':
-        real_result[key] = process_answer(real_dict[key])
-    else:
-        real_result[key] = real_dict[key]
+    real_result[key] = process_answer(real_dict[key])
 pred_result = {}
 for key in pred_dict:
-    if pred_dict[key] != 'null':
-        pred_result[key] = process_answer(pred_dict[key])
-    else:
-        pred_result[key] = pred_dict[key]
+    pred_result[key] = process_answer(pred_dict[key])
 
 
 print('Checking Accuracy')
