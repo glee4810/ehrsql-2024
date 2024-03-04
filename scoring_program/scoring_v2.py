@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd
 import multiprocessing as mp
 from scoring_utils import process_answer, reliability_score, penalize
-from postprocessing import post_process_sql
 
 
 reference_dir = os.path.join(sys.argv[1], 'ref')
