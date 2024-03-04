@@ -6,7 +6,7 @@ import numpy as np
 import multiprocessing as mp
 
 def process_item(item):
-    if type(item)==float:
+    if str(item).isnumeric():
         item = round(item,1)
     return str(item)
 
@@ -22,7 +22,7 @@ def execute_sql(sql, db_path):
     cur = con.cursor()
     result = cur.execute(sql).fetchall()
     con.close()
-    return process_answer(result)
+    return result
 
 def execute_sql_wrapper(key, sql, db_path, tag, skip_indicator='null'):
     assert tag in ['real', 'pred']
@@ -31,6 +31,7 @@ def execute_sql_wrapper(key, sql, db_path, tag, skip_indicator='null'):
             result = execute_sql(sql, db_path)
         except:
             result = 'error_'+tag
+        result = process_answer(result)
         return (key, result)
     else:
         return (key, skip_indicator)
