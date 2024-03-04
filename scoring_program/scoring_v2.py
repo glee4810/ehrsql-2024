@@ -1,3 +1,5 @@
+# Experimental metric that uses retrieved results instead of SQL queries
+
 import json
 import os
 import sys

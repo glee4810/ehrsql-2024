@@ -1,3 +1,5 @@
+# Official metric for the EHRSQL shared task 2024
+
 import json
 import os
 import sys
