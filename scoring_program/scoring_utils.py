@@ -6,8 +6,10 @@ import numpy as np
 import multiprocessing as mp
 
 def process_item(item):
-    if str(item).isnumeric():
-        item = round(item,1)
+    try:
+        item = round(float(item),1)
+    except:
+        pass
     return str(item)
 
 def process_answer(ans):
