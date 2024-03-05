@@ -7,7 +7,7 @@ import multiprocessing as mp
 
 def process_item(item):
     try:
-        item = round(float(item),1)
+        item = round(float(item),3)
     except:
         pass
     return str(item)
