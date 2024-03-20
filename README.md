@@ -22,7 +22,7 @@ This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical
 
 ## <a name="timeline"></a>Timeline
 
-All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe), unless stated otherwise
+All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe)), unless stated otherwise
 
 * ~~Registration opens: Monday January 29, 2024~~
 * ~~Training and validation data release: Monday January 29, 2024~~
