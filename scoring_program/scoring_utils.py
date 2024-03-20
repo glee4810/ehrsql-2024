@@ -4,6 +4,7 @@ import json
 import sqlite3
 import numpy as np
 import multiprocessing as mp
+from ast import literal_eval
 
 def process_item(item):
     try:
@@ -13,6 +14,10 @@ def process_item(item):
     return str(item)
 
 def process_answer(ans):
+    try:
+        ans = literal_eval(ans)
+    except:
+        pass
     if type(ans)==str:
         return ans
     else:
