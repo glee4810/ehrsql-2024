@@ -26,7 +26,7 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 
 * ~~Registration opens: Monday January 29, 2024~~
 * ~~Training and validation data release: Monday January 29, 2024~~
-* Test data release: Tuesday March 26, 2024
+* ~~Test data release: Tuesday March 26, 2024~~
 * Run submission due: Thursday March 28, 2024 (11:59PM UTC)
 * Code submission and fact sheet deadline: Friday March 29, 2024
 * Final result release: Monday April 1, 2024
