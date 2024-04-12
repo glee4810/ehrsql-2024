@@ -30,8 +30,8 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 * ~~Run submission due: Thursday March 28, 2024 (11:59PM UTC)~~
 * ~~Code submission and fact sheet deadline: Friday March 29, 2024~~
 * ~~Final result release: Monday April 1, 2024~~
-* Paper submission period starts: Monday April 8, 2024
-* Paper submission due: Wednesday April 10, 2024
+* ~~Paper submission period starts: Monday April 8, 2024~~
+* ~~Paper submission due: Wednesday April 10, 2024~~
 * Notification of acceptance: Thursday April 18, 2024
 * Final versions of papers due: Wednesday April 24, 2024
 * Clinical NLP Workshop @ NAACL 2024: June 21 or 22, 2024, Mexico City, Mexico
