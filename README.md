@@ -222,6 +222,12 @@ Submit your prediction file on our task website on Codabench. For more details, 
 
 
 
+#### Extra (SQL Execution)
+
+In this shared task, participants are required to submit their generated SQL queries, so execution is not necessary. However, if you are interested in checking the quality of your generated query, please refer to this Colab notebook: https://colab.research.google.com/drive/18mhDaKGlHPgLhZXx9V6EcPIQEBy5vbGd?usp=sharing. This note includes the simplest baseline (abstain-all) and postprocessing for queries and answers (e.g., decimal point rounding).
+
+
+
 ## <a name="contact"></a>Contact
 
 For more updates, join our Google group [https://groups.google.com/g/ehrsql-2024/](https://groups.google.com/g/ehrsql-2024/).
