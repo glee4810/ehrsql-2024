@@ -3,7 +3,8 @@
 
 ## [Overview](https://sites.google.com/view/ehrsql-2024)
 
-Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record numerous aspects of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond a predefined set of queries requires skills in query languages like SQL. To make this process more accessible, one could develop a text-to-SQL system that automatically translates natural language questions into corresponding SQL queries. In this task, we aim to develop a reliable text-to-SQL system specifically tailored for EHRs.
+Electronic Health Records (EHRs) are relational databases that store the entire medical histories of patients within hospitals. They record numerous aspects of a patient's medical care, from admission and diagnosis to treatment and discharge. While EHRs are vital sources of clinical data, exploring them beyond a predefined set of queries or requests requires skills in query languages like SQL. To simplify access to EHR data, one straightforward strategy is to build a question-answering system, specifically leveraging text-to-SQL models that can automatically convert natural language questions into corresponding SQL queries and use the queries to retrieve answers. The goal of this shared task is to develop a reliable text-to-SQL model specifically tailored for EHRs that can accurately answer questions when certain and abstain from providing answers when uncertain, regardless of whether the questions are answerable or unanswerable.
+
 
 This is part of the shared tasks at [NAACL 2024 - Clinical NLP](https://clinical-nlp.github.io/2024).
 
@@ -34,7 +35,7 @@ All deadlines are 11:59PM UTC-12:00 ([Anywhere on Earth](https://www.timeanddate
 * ~~Paper submission due: Wednesday April 10, 2024~~
 * ~~Notification of acceptance: Thursday April 18, 2024~~
 * ~~Final versions of papers due: Wednesday April 24, 2024~~
-* Clinical NLP Workshop @ NAACL 2024: June 21 or 22, 2024, Mexico City, Mexico
+* ~~Clinical NLP Workshop @ NAACL 2024: June 22, 2024, Mexico City, Mexico~~
 
 
 ## <a name="dataset"></a>Dataset
