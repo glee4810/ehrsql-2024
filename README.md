@@ -241,6 +241,6 @@ Organizers are from [EdLab](https://mp2893.com/) @ [KAIST](https://gsai.kaist.ac
 
 * [Edward Choi](https://mp2893.com/)
 * [Gyubok Lee](https://sites.google.com/view/gyuboklee)
-* Sunjun Kweon
+* [Sunjun Kweon](https://kr.linkedin.com/in/sunjun-kweon-523b51104)
 * [Seongsu Bae](https://seongsubae.info/)
 
