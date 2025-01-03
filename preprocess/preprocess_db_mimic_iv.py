@@ -765,13 +765,13 @@ class Build_MIMIC_IV(Sampler):
         INPUTEVENTS_table = read_csv(
             data_dir=self.data_dir,
             filename="icu/inputevents.csv",
-            columns=["subject_id", "hadm_id", "stay_id", "starttime", "itemid", "amount", "amountuom"],
+            columns=["subject_id", "hadm_id", "stay_id", "starttime", "itemid", "totalamount", "totalamountuom"],
             lower=True,
         )
 
-        INPUTEVENTS_table = INPUTEVENTS_table.dropna(subset=["hadm_id", "stay_id", "amount", "amountuom"])
-        INPUTEVENTS_table = INPUTEVENTS_table[INPUTEVENTS_table["amountuom"] == "ml"]  # Input volume is mostly (~50%) in ml
-        del INPUTEVENTS_table["amountuom"]
+        INPUTEVENTS_table = INPUTEVENTS_table.dropna(subset=["hadm_id", "stay_id", "totalamount", "totalamountuom"])
+        INPUTEVENTS_table = INPUTEVENTS_table[INPUTEVENTS_table["totalamountuom"] == "ml"]  # Input volume is mostly (~50%) in ml
+        # del INPUTEVENTS_table["amountuom"]
 
         INPUTEVENTS_table = INPUTEVENTS_table[INPUTEVENTS_table["itemid"].isin(self.D_ITEMS_dict)]
 
@@ -811,7 +811,7 @@ class Build_MIMIC_IV(Sampler):
         # preprocess
         OUTPUTEVENTS_table = OUTPUTEVENTS_table.dropna(subset=["hadm_id", "stay_id", "value", "valueuom"])
         OUTPUTEVENTS_table = OUTPUTEVENTS_table[OUTPUTEVENTS_table["valueuom"] == "ml"]  # Output volume is always in ml
-        del OUTPUTEVENTS_table["valueuom"]
+        # del OUTPUTEVENTS_table["valueuom"]
 
         OUTPUTEVENTS_table = OUTPUTEVENTS_table[OUTPUTEVENTS_table["itemid"].isin(self.D_ITEMS_dict)]
 

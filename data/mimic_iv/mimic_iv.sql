@@ -155,7 +155,8 @@ CREATE TABLE inputevents
     stay_id INT NOT NULL,
     starttime TIMESTAMP(0) NOT NULL,
     itemid INT NOT NULL,
-    amount DOUBLE PRECISION,
+    totalamount DOUBLE PRECISION,
+    totalamountuom VARCHAR(50),
     FOREIGN KEY(hadm_id) REFERENCES admissions(hadm_id),
     FOREIGN KEY(stay_id) REFERENCES icustays(stay_id),
     FOREIGN KEY(itemid) REFERENCES d_items(itemid)
@@ -171,6 +172,7 @@ CREATE TABLE outputevents
     charttime TIMESTAMP(0) NOT NULL,
     itemid INT NOT NULL,
     value DOUBLE PRECISION,
+    valueuom VARCHAR(50),
     FOREIGN KEY(hadm_id) REFERENCES admissions(hadm_id),
     FOREIGN KEY(stay_id) REFERENCES icustays(stay_id),
     FOREIGN KEY(itemid) REFERENCES d_items(itemid)
